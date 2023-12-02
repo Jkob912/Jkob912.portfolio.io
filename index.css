@@ -1,0 +1,360 @@
+@font-face {
+    font-family: Krylon;
+    src: url('font/krylon-060621/KRYLON/Krylon-Regular.woff');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('font/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto_Light;
+    src: url('font/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: Archivo_Black;
+    src: url('font/Archivo_Black/ArchivoBlack-Regular.ttf');
+}
+
+html{
+    background: #222020;
+}
+*{
+    margin: 1rem;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 1rem;
+    margin: 1rem 0;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.logo{
+    font-size: 2.5rem;
+    padding: 20px;
+    margin: auto;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Nav Bar */
+.navbar{
+    float: right;
+    width: 500px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}   
+
+.navbar a:hover{
+    color: slategray;
+}
+
+.dropbtn {
+    background-color: transparent;
+    padding: 16px;
+    border: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .drop-cont {
+    display: none;
+    background: #353030;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .drop-cont a {
+    padding: 12px 16px;
+    margin: 0;
+    text-decoration: none;
+    display: block;
+    border-radius: 1px white solid;
+  }
+    .drop-cont a:hover {
+        background-color: #ddd;
+        cursor: pointer;
+    }
+
+    .dropdown:hover .drop-cont{
+        display: block;
+    }
+
+/* Intro */
+.sh-intro{
+    color: white;
+    position: relative;
+    margin: 2rem;
+}
+
+.two-col{
+    display: flex;
+}
+
+.two-col > * {
+    width: 50%;
+    padding: 1rem;
+}
+
+h1{ 
+    font-family: Archivo_Black;
+    font-weight: 1rem;
+}
+h3,h4{
+    font-family: Roboto;
+}
+
+p{
+    font-family: Roboto_Light;
+}
+.socmed{
+    font-size: 1.3rem;
+}  
+
+.fa-facebook-f:hover{
+    cursor: pointer;
+    color: #0866FF;
+}
+.fa-twitter:hover{
+    cursor: pointer;
+    color: #1D9BF0;
+}
+.fa-instagram:hover{
+    cursor: pointer;
+    background: -webkit-linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+/* Logos */
+.vr{
+    border-left: 1px solid white;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+}
+
+.three-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two-col2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Case Study */
+.case-study{
+    position: relative;
+    align-items: center;
+    border: white 1px solid;
+    color: white;
+    height: 250px;
+}
+
+
+
+.case-study .case-study-con{
+    padding: 45px 0;
+}
+
+.btn{
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition:  .5s;
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+    font-family: Roboto_Light;
+}
+
+.btn:hover{
+    background: slategray;
+    color: #222020;
+    
+}
+
+/* Footer */
+
+.footer{
+    color: white;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.footer-container{
+    min-height: 250px;
+    max-height: 250px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.footer h1{
+    align-self: start;
+    position: relative;
+    display: inline;
+    width: 100%;
+}
+.ft-project a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    left: 0;
+    font-family: Roboto_Light;
+}
+.footer > *{
+    padding: 1rem;
+}
+
+.btn2{
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    background: greenyellow;
+    font-weight: 500;
+    margin-left: 40px;
+    transition:  .5s;
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+}
+
+.btn2:hover{
+    box-shadow: 5px 2px rgb(79, 117, 23);
+    transition: .5s ease;
+}
+
+.input-box{
+    width: 250px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    transition:  .5s;
+    display: flex;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}   
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 660;
+}
+
+
+
+
+/* media queries */
+@media (max-width:991px){
+   
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    header #toggler:checked ~ .navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
+         .footer{
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: repeat(3,1fr);
+    } 
+}
+
+@media (max-width:459px){
+   
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+}
